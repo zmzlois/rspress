@@ -18,6 +18,7 @@ interface Props {
   isScreenOpen: boolean;
   siteData: SiteData<DefaultThemeConfig>;
   pathname: string;
+  toggleScreen: () => void;
 }
 
 const NavScreenTranslations = () => {
@@ -47,7 +48,7 @@ const NavScreenVersions = () => {
 };
 
 export function NavScreen(props: Props) {
-  const { isScreenOpen, siteData, pathname } = props;
+  const { isScreenOpen, toggleScreen, siteData, pathname } = props;
   const screen = useRef<HTMLDivElement | null>(null);
   const localesData = siteData.themeConfig.locales || [];
   const hasMultiLanguage = localesData.length > 1;
@@ -75,6 +76,7 @@ export function NavScreen(props: Props) {
             <div key={item.text} className={`${styles.navMenuItem} w-full`}>
               {'link' in item ? (
                 <NavMenuSingleItem
+                  onNavigate={toggleScreen}
                   pathname={pathname}
                   key={item.text}
                   base={base}
@@ -86,6 +88,7 @@ export function NavScreen(props: Props) {
                   <NavScreenMenuGroup
                     {...item}
                     items={'items' in item ? item.items : item}
+                    onNavigate={toggleScreen}
                   />
                 </div>
               )}

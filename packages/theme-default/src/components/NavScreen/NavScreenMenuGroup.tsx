@@ -13,6 +13,7 @@ export interface NavScreenMenuGroupItem {
   text?: string | React.ReactElement;
   items: NavItem[];
   activeValue?: string;
+  onNavigate?: () => void;
 }
 
 export function NavScreenMenuGroup(item: NavScreenMenuGroupItem) {
@@ -59,7 +60,7 @@ export function NavScreenMenuGroup(item: NavScreenMenuGroupItem) {
             {item.text}
           </p>
         )}
-        {(item.items as NavItemWithLink[]).map(renderLinkItem)}
+        {item.items.map(renderLinkItem)}
       </div>
     );
   };
@@ -73,6 +74,7 @@ export function NavScreenMenuGroup(item: NavScreenMenuGroupItem) {
         className={styles.button}
         onClick={() => {
           setIsOpen(!isOpen);
+          item.onNavigate?.();
         }}
       >
         <span className={styles.buttonSpan}>{item.text}</span>

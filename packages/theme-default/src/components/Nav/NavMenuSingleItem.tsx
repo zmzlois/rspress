@@ -13,6 +13,7 @@ interface Props {
   langs?: string[];
   base: string;
   rightIcon?: React.ReactNode;
+  onNavigate?: () => void;
 }
 
 export function NavMenuSingleItem(
@@ -24,7 +25,7 @@ export function NavMenuSingleItem(
   );
 
   return (
-    <Link href={normalizeHref(item.link)}>
+    <Link href={normalizeHref(item.link)} onNavigate={item?.onNavigate}>
       <div
         key={item.text}
         className={`${styles.singleItem} ${

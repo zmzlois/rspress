@@ -17,6 +17,7 @@ export function NavHamburger(props: Props) {
     <Fragment>
       <NavScreen
         isScreenOpen={isScreenOpen}
+        toggleScreen={toggleScreen}
         siteData={siteData}
         pathname={pathname}
       />
