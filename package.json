@@ -24,20 +24,11 @@
   },
   "packageManager": "pnpm@8.15.4",
   "lint-staged": {
-    "*.{ts,tsx,js,jsx,mjs,cjs}": [
-      "biome lint . --diagnostic-level=warn"
-    ],
-    "package.json": [
-      "pnpm run check-dependency-version"
-    ]
+    "*.{ts,tsx,js,jsx,mjs,cjs}": ["biome lint . --diagnostic-level=warn"],
+    "package.json": ["pnpm run check-dependency-version"]
   },
   "workspaces": {
-    "packages": [
-      "apps/*",
-      "examples/*",
-      "features/*",
-      "packages/*"
-    ]
+    "packages": ["apps/*", "examples/*", "features/*", "packages/*"]
   },
   "devDependencies": {
     "check-dependency-version-consistency": "^4.1.0",
@@ -64,6 +55,12 @@
     "tree-kill": "^1.2.2",
     "ts-node": "^10.9.1",
     "vitest": "0.34.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "@rspack/core": "0.6.3-canary-2ffdf97-20240430074011",
+      "@rspack/binding": "0.6.3-canary-2ffdf97-20240430074011"
+    }
   },
   "publishConfig": {
     "access": "public",
