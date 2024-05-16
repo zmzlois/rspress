@@ -40,6 +40,16 @@ export default defineConfig({
         ),
       },
     },
+    dev: {
+      writeToDisk: true,
+    },
+    tools: {
+      rspack: {
+        experiments: {
+          lazyCompilation: true,
+        },
+      },
+    },
   },
   route: {
     cleanUrls: true,
