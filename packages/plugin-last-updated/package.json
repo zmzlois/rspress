@@ -30,7 +30,7 @@
     "@types/react-dom": "^18",
     "react": "^18.2.0",
     "typescript": "^5",
-    "vitest": "0.34.1"
+    "vitest": "0.34.6"
   },
   "dependencies": {
     "@rspress/shared": "workspace:*"
