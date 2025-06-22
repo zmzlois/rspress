@@ -1,0 +1,14 @@
+.link_a7cea {
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity .2s;
+}
+
+.link_a7cea:hover {
+  opacity: .85;
+}
+
+.link_a7cea:active {
+  opacity: .7;
+}
+

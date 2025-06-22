@@ -1,0 +1,44 @@
+.clip_aacad {
+  background: var(--rp-home-hero-name-background);
+  -webkit-text-fill-color: var(--rp-home-hero-name-color);
+  background-clip: text;
+}
+
+.mask_bbaa6 {
+  background-image: var(--rp-home-mask-background-image);
+  mixblendmode: normal;
+  filter: blur(80px);
+  opacity: .05;
+  z-index: 0;
+  border-radius: 100%;
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  margin-top: -250px;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+.dark .mask_bbaa6 {
+  opacity: .15;
+}
+
+@media (width >= 640px) {
+  .rspress-home-hero-image {
+    width: var(--rp-home-hero-image-width);
+  }
+}
+
+@media (width <= 640px) {
+  .rspress-home-hero-image {
+    max-width: var(--rp-home-hero-image-width-sm);
+  }
+}
+
+@media (width <= 768px) {
+  .mask_bbaa6 {
+    display: none;
+  }
+}
+

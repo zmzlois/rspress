@@ -1,0 +1,22 @@
+.aside-link {
+  border-radius: var(--rp-radius-small) 0 0 var(--rp-radius-small);
+  margin-bottom: 1px;
+  padding: .25rem 0;
+}
+
+.aside-link:hover {
+  background-color: var(--rp-c-bg-mute);
+}
+
+.aside-link.aside-active, .aside-link.aside-active:hover {
+  color: var(--rp-c-link);
+  background-color: var(--rp-c-brand-tint);
+}
+
+.aside-link-text {
+  overflow-wrap: break-word;
+  padding: 0 12px;
+  font-size: .8125rem;
+  line-height: 1.25rem;
+}
+
