@@ -1,0 +1,21 @@
+.rspress-toc-link {
+  border-radius: var(--rp-radius-small);
+  transition: all .3s;
+  display: block;
+}
+
+.rspress-toc-link-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-radius: var(--rp-radius-small);
+  color: var(--rp-c-text-2);
+  padding: 6px 12px;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+}
+
+.rspress-toc-link-text:hover {
+  background-color: var(--rp-c-bg-mute);
+  color: var(--rp-c-text-1);
+}
+

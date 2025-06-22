@@ -1,0 +1,122 @@
+html:not(.rp-dark) {
+  --rp-code-font-size: 14px;
+  --rp-code-block-color: #2e3440;
+  --rp-code-title-bg: #0063c70d;
+  --rp-code-block-bg: #f6f8fa;
+  --rp-code-copy-code-hover-bg: #ffffff0d;
+  --rp-code-wrap-code-hover-bg: #ffffff0d;
+}
+
+html.rp-dark {
+  --rp-code-font-size: 14px;
+  --rp-code-block-color: #e5e7eb;
+  --rp-code-title-bg: #ffffff0a;
+  --rp-code-block-bg: #242424;
+  --rp-code-copy-code-hover-bg: #ffffff0d;
+  --rp-code-wrap-code-hover-bg: #ffffff0d;
+}
+
+.rspress-doc :not(pre, h1, h2, h3, h4, h5, h6) > code {
+  font-size: var(--rp-code-font-size);
+}
+
+.rspress-doc :not(pre, div) > code {
+  border-radius: var(--rp-radius-small);
+  background-color: var(--rp-c-text-code-bg);
+  overflow-wrap: break-word;
+  padding: 3px 6px;
+}
+
+.rspress-doc :not(pre, div, a) > code {
+  color: var(--rp-c-text-code);
+}
+
+.rspress-doc h1 > code, .rspress-doc h2 > code, .rspress-doc h3 > code {
+  font-size: .9em;
+}
+
+.rspress-doc a > code {
+  color: var(--rp-c-brand-dark);
+  transition: color .25s;
+}
+
+.rspress-doc a:hover > code {
+  color: var(--rp-c-brand);
+}
+
+.rspress-doc div[class^="language-"] {
+  background-color: var(--rp-code-block-bg);
+  margin: 16px 0;
+  transition: none;
+  position: relative;
+  overflow-x: auto;
+}
+
+.rspress-doc .rspress-code-title {
+  font-size: var(--rp-code-font-size);
+  background-color: var(--rp-code-title-bg);
+  padding: 12px 16px;
+  transition: background-color .5s;
+}
+
+@media (width >= 640px) {
+  .rspress-doc div[class^="language-"] {
+    border-radius: var(--rp-radius);
+    contain: content;
+    margin: 24px 0;
+  }
+}
+
+@media (width <= 640px) {
+  .rspress-doc li div[class^="language-"] {
+    border-radius: var(--rp-radius-small) 0 0 var(--rp-radius-small);
+  }
+}
+
+.rspress-doc [class^="language-"] pre, .rspress-doc [class^="language-"] code {
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  tab-size: 4;
+  hyphens: none;
+}
+
+.rspress-doc [class^="language-"] pre {
+  z-index: 1;
+  background: none;
+  margin: 0;
+  position: relative;
+  overflow-x: auto;
+}
+
+.rspress-doc [class^="language-"] code {
+  width: fit-content;
+  min-width: 100%;
+  line-height: 1.7;
+  font-size: var(--rp-code-font-size);
+  color: var(--rp-code-block-color);
+  background-color: var(--rp-code-block-bg);
+  padding: 16px 0;
+  transition: color .5s;
+  display: inline-block;
+}
+
+.rspress-doc [class^="language-"] .rspress-code-content {
+  position: relative;
+}
+
+.rspress-doc [class^="language-"] .rspress-code-content span.highlighted {
+  background-color: var(--rp-code-line-highlight-color);
+  padding-left: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.rspress-doc [class^="language-"] .rspress-code-content > code {
+  padding: 16px 20px;
+}
+

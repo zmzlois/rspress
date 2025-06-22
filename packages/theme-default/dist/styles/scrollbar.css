@@ -1,0 +1,28 @@
+.rspress-scrollbar {
+  scrollbar-gutter: stable;
+}
+
+.rspress-scrollbar::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+  transition: all .3s;
+}
+
+.rspress-scrollbar::-webkit-scrollbar-track {
+  background: none;
+}
+
+.rspress-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: var(--rp-radius-small);
+}
+
+.rspress-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: var(--rp-c-text-4);
+  background-clip: content-box;
+  border: 3px solid #0000;
+}
+
+.rspress-scrollbar::-webkit-scrollbar-corner {
+  background: none;
+}
+

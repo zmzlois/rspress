@@ -1,0 +1,24 @@
+.social-links-icon_a4ad0 {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+  color: var(--rp-c-text-2);
+  align-items: center;
+  margin-left: .5rem;
+  display: flex;
+}
+
+.social-links-icon_a4ad0:hover {
+  color: var(--rp-c-text-1);
+}
+
+@media (width <= 768px) {
+  .menu-item_e90a6:before {
+    display: none;
+  }
+
+  a:only-child .social-links-icon_a4ad0 {
+    margin-left: 0;
+  }
+}
+

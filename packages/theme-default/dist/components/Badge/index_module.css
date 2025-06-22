@@ -1,0 +1,45 @@
+.badge_cbafb {
+  font-weight: 500;
+  transition: color .25s;
+}
+
+.badge_cbafb.tip_cce85 {
+  color: var(--rp-container-tip-text);
+  background-color: var(--rp-container-tip-bg);
+}
+
+.badge_cbafb.info_e8cd3 {
+  color: var(--rp-container-info-text);
+  background-color: var(--rp-container-info-bg);
+}
+
+.badge_cbafb.warning_b5c28 {
+  color: var(--rp-container-warning-text);
+  background-color: var(--rp-container-warning-bg);
+}
+
+.badge_cbafb.danger_b0301 {
+  color: var(--rp-container-danger-text);
+  background-color: var(--rp-container-danger-bg);
+}
+
+.badge_cbafb.outline_faf5e {
+  border: 1px solid;
+}
+
+.badge_cbafb.outline_faf5e.tip_cce85 {
+  border-color: var(--rp-container-tip-border);
+}
+
+.badge_cbafb.outline_faf5e.info_e8cd3 {
+  border-color: var(--rp-container-info-border);
+}
+
+.badge_cbafb.outline_faf5e.warning_b5c28 {
+  border-color: var(--rp-container-warning-border);
+}
+
+.badge_cbafb.outline_faf5e.danger_b0301 {
+  border-color: var(--rp-container-danger-border);
+}
+

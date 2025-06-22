@@ -1,0 +1,17 @@
+@media (width >= 640px) {
+  .pager_d6903 {
+    flex-direction: column;
+    width: 50%;
+    display: flex;
+  }
+
+  .pager_d6903.has-next_e91b1 {
+    padding-top: 0;
+    padding-left: 16px;
+  }
+}
+
+.prev_c92d1, .next_c11be {
+  width: 100%;
+}
+
