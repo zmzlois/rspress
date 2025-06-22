@@ -139,6 +139,7 @@ export function Nav(props: NavProps) {
           {navTitle || <NavBarTitle />}
           after nav title
           {afterNavTitle}
+          end of container
           <div className="rp-flex rp-flex-1 rp-justify-end rp-items-center">
             {leftNav()}
             {rightNav()}

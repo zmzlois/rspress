@@ -100,6 +100,7 @@ function Nav(props) {
                         navTitle || /*#__PURE__*/ jsx(NavBarTitle, {}),
                         "after nav title",
                         afterNavTitle,
+                        "end of container",
                         /*#__PURE__*/ jsxs("div", {
                             className: "rp-flex rp-flex-1 rp-justify-end rp-items-center",
                             children: [

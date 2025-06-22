@@ -20,7 +20,7 @@
   transition: all 0.3s ease;
   transition-property: transform, opacity;
   background: var(--rp-c-bg);
-  height: var(--rp-nav-height);
+  height: calc(var(--rp-nav-height) - 0.4px);
   z-index: var(--rp-z-index-nav);
   // Hidden the box shadow
   // box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);

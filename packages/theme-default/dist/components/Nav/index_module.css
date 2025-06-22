@@ -16,7 +16,7 @@
 
 .navContainer_d18b1 {
   background: var(--rp-c-bg);
-  height: var(--rp-nav-height);
+  height: calc(var(--rp-nav-height)  - .4px);
   z-index: var(--rp-z-index-nav);
   transition: transform .3s, opacity .3s;
   top: 0;
