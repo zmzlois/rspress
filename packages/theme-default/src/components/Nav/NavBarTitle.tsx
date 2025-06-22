@@ -15,16 +15,19 @@ export const NavBarTitle = () => {
     }
     if (typeof rawLogo === 'string') {
       return (
-        <img
-          src={normalizeImagePath(rawLogo)}
-          alt="logo"
-          id="logo"
-          className="rspress-logo"
-        />
+        <>
+          <img
+            src={normalizeImagePath(rawLogo)}
+            alt="logo"
+            id="logo"
+            className="rspress-logo"
+          />
+        </>
       );
     }
     return (
       <>
+        there is something
         <img
           src={normalizeImagePath(rawLogo.light)}
           alt="logo"

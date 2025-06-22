@@ -124,7 +124,7 @@ export function Nav(props: NavProps) {
   };
 
   return (
-    <>
+    <div className=" border-red-500 border-b-2">
       {beforeNav}
       <div
         className={`${styles.navContainer} rspress-nav rp-px-6 ${
@@ -137,6 +137,7 @@ export function Nav(props: NavProps) {
         >
           {beforeNavTitle}
           {navTitle || <NavBarTitle />}
+          after nav title
           {afterNavTitle}
           <div className="rp-flex rp-flex-1 rp-justify-end rp-items-center">
             {leftNav()}
@@ -149,6 +150,6 @@ export function Nav(props: NavProps) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

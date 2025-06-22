@@ -71,6 +71,10 @@
   flex-shrink: 0;
 }
 
+.navContainer {
+  border-bottom: 0.4px solid rgb(255, 255, 255);
+}
+
 .navContainer * {
   pointer-events: all;
 }
