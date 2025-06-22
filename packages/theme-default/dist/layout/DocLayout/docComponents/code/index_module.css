@@ -1,0 +1,74 @@
+.rspress-code-content:hover .code-button-group_fb445 > button {
+  opacity: 1;
+}
+
+.code-button-group_fb445 {
+  z-index: 10;
+  gap: 10px;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.code-button-group_fb445 > button {
+  opacity: 0;
+  background-color: #0000;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.code-button-group_fb445 svg {
+  opacity: inherit;
+  width: 20px;
+  height: 20px;
+  color: var(--rp-c-text-3);
+  transition: all .2s;
+}
+
+.code-button-group_fb445 svg:hover {
+  color: var(--rp-c-text-2);
+}
+
+.code-copy-button_c5089 .icon-success_d5ec0 {
+  opacity: 0;
+  color: #00d600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)scale(0);
+}
+
+.code-copied_e2224 .icon-copy_ef942 {
+  opacity: 0;
+  transform: scale(.33);
+}
+
+.code-copied_e2224 .icon-success_d5ec0 {
+  opacity: 1;
+  transition-delay: 75ms;
+  transform: translate(-50%, -50%)scale(1);
+}
+
+.icon-wrapped_fb89b {
+  opacity: 0;
+  color: #00d600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)scale(0);
+}
+
+.wrapped-btn_a2562 .icon-wrap_ccd3d {
+  opacity: 0;
+  transform: scale(.33);
+}
+
+.wrapped-btn_a2562 .icon-wrapped_fb89b {
+  opacity: 1;
+  transition-delay: 75ms;
+  transform: translate(-50%, -50%)scale(1);
+}
+

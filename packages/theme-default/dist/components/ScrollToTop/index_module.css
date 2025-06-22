@@ -1,0 +1,22 @@
+.scroll-to-top_e22be {
+  z-index: 1;
+  color: var(--rp-c-text-1);
+  border-color: var(--rp-c-text-3);
+  background-color: var(--rp-c-bg-soft);
+  box-shadow: 0 1px 3px 0 var(--rp-shadow-1), 0 1px 2px 0 var(--rp-shadow-2);
+  border-width: .1px;
+  border-radius: 9999px;
+  padding: .5rem;
+  transition-property: transform;
+  transition-duration: 75ms;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  transform: scale(0);
+}
+
+.scroll-to-top_e22be.entered_c8faf {
+  transform: scale(1) !important;
+}
+

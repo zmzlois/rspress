@@ -1,0 +1,10 @@
+.link_e1101:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.linkCard_f82f1:hover {
+  background-color: var(--rp-c-bg-mute);
+}
+

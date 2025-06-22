@@ -1,0 +1,127 @@
+.rspress-nav-menu-group-button {
+  background-color: #0000;
+}
+
+@media (width >= 1280px) {
+  .hidden_f8586 {
+    opacity: 0;
+    background: none;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.container_e4235 {
+  margin: auto;
+}
+
+.navContainer_d18b1 {
+  background: var(--rp-c-bg);
+  height: var(--rp-nav-height);
+  z-index: var(--rp-z-index-nav);
+  transition: transform .3s, opacity .3s;
+  top: 0;
+  left: 0;
+}
+
+.relative_bb7f1 {
+  position: relative;
+}
+
+.sticky_ddfa7 {
+  position: sticky;
+}
+
+.sticky_ddfa7 + section .rspress-sidebar-menu-container {
+  margin-top: calc(var(--rp-nav-height) * -1);
+  padding-top: var(--rp-nav-height);
+}
+
+.sticky_ddfa7 + section .rspress-local-toc-container {
+  margin-top: var(--rp-nav-height);
+}
+
+.leftNav_e6722, .rightNav_a2fea {
+  display: none;
+}
+
+.singleItem_c1154 {
+  word-break: keep-all;
+}
+
+.activeItem_a28b5, .singleItem_c1154:hover {
+  cursor: pointer;
+  color: var(--rp-c-link);
+  border-radius: var(--rp-radius);
+}
+
+.navBarTitle_c5f07 {
+  flex-shrink: 0;
+}
+
+.navContainer_d18b1 * {
+  pointer-events: all;
+}
+
+.menu-item_b8238 {
+  margin: 0 8px;
+  display: none;
+}
+
+@media (width <= 768px) {
+  .menu-item_b8238:before {
+    display: none;
+  }
+
+  .mobileNavMenu_e7045 {
+    display: flex;
+  }
+}
+
+@media (width >= 768px) {
+  .menu-item_b8238 {
+    display: flex;
+  }
+
+  .leftNav_e6722 {
+    flex-grow: 1;
+    align-items: center;
+    margin: 0 .5rem;
+    display: flex;
+  }
+
+  .rightNav_a2fea {
+    align-items: center;
+    display: flex;
+  }
+
+  .mobileNavMenu_e7045 {
+    display: none;
+  }
+}
+
+@media (width >= 960px) {
+  .mask_cea59 {
+    width: 100vw;
+    height: 30px;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+  }
+
+  .mask_cea59.docPage_b27ff {
+    width: calc(100vw - var(--rp-sidebar-width)  - 48px);
+  }
+
+  .mask_cea59:before {
+    background: linear-gradient(var(--rp-c-bg), transparent 60%);
+    content: "";
+    width: 100%;
+    height: 30px;
+    display: block;
+  }
+
+  .leftNav_e6722 {
+    margin: 0 2rem;
+  }
+}
+

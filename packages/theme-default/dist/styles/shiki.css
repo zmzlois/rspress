@@ -1,0 +1,115 @@
+:root {
+  --shiki-foreground: #414141;
+  --shiki-background: transparent;
+  --shiki-token-constant: #1976d2;
+  --shiki-token-string: #31a94d;
+  --shiki-token-comment: #b6b4b4;
+  --shiki-token-keyword: #cf2727;
+  --shiki-token-parameter: #f59403;
+  --shiki-token-function: #7041c8;
+  --shiki-token-string-expression: #218438;
+  --shiki-token-punctuation: #242323;
+  --shiki-token-link: #22863a;
+  --shiki-token-deleted: #d32828;
+  --shiki-token-inserted: #22863a;
+}
+
+html.rp-dark {
+  --shiki-foreground: #cac7c7;
+  --shiki-token-constant: #6fb0fa;
+  --shiki-token-string: #f9a86e;
+  --shiki-token-comment: #6a727b;
+  --shiki-token-keyword: #f47481;
+  --shiki-token-parameter: #ff9800;
+  --shiki-token-function: #ae8eeb;
+  --shiki-token-string-expression: #4fb74d;
+  --shiki-token-punctuation: #bbb;
+  --shiki-token-link: #f9a76d;
+  --shiki-token-deleted: #ee6d7a;
+  --shiki-token-inserted: #36c47f;
+}
+
+.shiki span.line {
+  padding: 0 1.25rem;
+  display: inline-block;
+}
+
+.diff, .code-line-highlighted {
+  width: 100%;
+  padding: 0 20px;
+  transition: background-color .5s;
+  display: inline-block;
+  position: relative;
+}
+
+.diff.add:after {
+  content: "+";
+  color: #4fb74d;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.diff.remove:after {
+  content: "-";
+  color: #f47481;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.has-diff [class*="language-"] .diff.add {
+  background-color: #10b9811a;
+  padding: 0 20px 0 19px;
+}
+
+[class*="language-"] code .diff.remove {
+  background-color: #f43f5e1a;
+  padding: 0 20px 0 19px;
+}
+
+.rspress-code-content .has-highlighted [class*="language-"] .line.highlighted {
+  background-color: #0063c71a;
+  width: 100%;
+  display: inline-block;
+  position: static;
+}
+
+.rspress-code-content .has-highlighted [class*="language-"] .line.highlighted.error {
+  background-color: #f43f5e1a;
+}
+
+.rspress-code-content .has-highlighted [class*="language-"] .line.highlighted.warning {
+  background-color: #eab3081a;
+}
+
+.has-focused [class*="language-"] .line:not(.focused) {
+  filter: blur(.095rem);
+  opacity: .4;
+  transition: filter .35s, opacity .35s;
+}
+
+.has-focused [class*="language-"]:hover .line:not(.focused) {
+  filter: blur();
+  opacity: 1;
+}
+
+.has-line-number code {
+  counter-reset: step;
+  counter-increment: step 0;
+}
+
+.has-line-number code .line-number:before {
+  content: counter(step);
+  counter-increment: step;
+  text-align: right;
+  color: #738a9466;
+  width: 15px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.rp-force-wrap code {
+  white-space: pre-wrap !important;
+}
+
